@@ -1,0 +1,1 @@
+Siempre leer las reglas en la carpeta .AGENTS, se tienen que respetar las cada uno.

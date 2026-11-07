@@ -1,0 +1,22 @@
+{
+  "name": "@mox/auth-backend",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev": "node --watch src/Main.ts",
+    "start": "node dist/Main.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@mox/backend": "workspace:*",
+    "@mox/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "mox-master",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25",
+    "pnpm": ">=10 <11"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck && tsc -p scripts/tsconfig.json",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "feature:create": "node scripts/src/CrearCaracteristica.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "@types/node": "24.19.2",
+    "jest": "30.5.2",
+    "turbo": "2.11.9",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "pnpm@10.34.7"
+}

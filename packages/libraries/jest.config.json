@@ -1,0 +1,14 @@
+{
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testMatch": [
+    "<rootDir>/.test-dist/test/**/*.test.js"
+  ],
+  "transform": {},
+  "collectCoverageFrom": [
+    "<rootDir>/.test-dist/src/**/*.js",
+    "!**/interfaces/**",
+    "!**/index.js"
+  ],
+  "coverageDirectory": "coverage"
+}

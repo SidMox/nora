@@ -1,0 +1,22 @@
+# Example
+
+Característica de referencia para operaciones sobre una entidad con identificador,
+denominación, descripción y observaciones.
+
+**Contratos:** Example y ExampleId describen la entidad. CreateExampleInput exige
+denominación y descripción y permite identificador opcional; UpdateExampleInput
+exige identificador y admite cambios parciales. ExampleRepository y ExampleDataSource
+definen consulta, creación, actualización y eliminación, individuales y múltiples,
+con resultados comunicados mediante Respuesta.
+
+**Caso de uso:** CreateExampleUseCase ejecuta la validación antes de llamar al
+repositorio para crear el registro; una entrada inválida detiene la operación.
+
+**Validaciones:** denominación requerida de hasta 100 caracteres, descripción
+requerida de hasta 500 y observaciones opcionales de hasta 1000. Actualizar valida
+el identificador y los campos presentes; eliminar valida el identificador.
+El maestro acumula observaciones según la operación y devuelve error o éxito.
+
+Fuente: [contratos y casos de uso](../src/example/business),
+[entradas](../src/example/utils/params/ExampleParams.ts) y
+[validaciones](../src/example/utils/validations/ExampleValidations.ts).

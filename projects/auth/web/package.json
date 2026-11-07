@@ -1,0 +1,25 @@
+{
+  "name": "@mox/auth-web",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit && vite build --config src/ViteConfig.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev": "vite --config src/ViteConfig.ts",
+    "preview": "vite preview --config src/ViteConfig.ts"
+  },
+  "private": true,
+  "dependencies": {
+    "@mox/web-mui": "workspace:*",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "vite": "7.1.12"
+  }
+}
